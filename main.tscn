@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4uc1wxfxxvy"]
+
+[ext_resource type="Script" path="res://Cube.gd" id="1_jcwhe"]
+[ext_resource type="Script" path="res://Camera.gd" id="1_ujsf1"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, 4)
+script = ExtResource("1_ujsf1")
+
+[node name="Cube" type="CSGBox3D" parent="."]
+script = ExtResource("1_jcwhe")
+
+[node name="Light" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 4)
